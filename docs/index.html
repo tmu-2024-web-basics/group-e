@@ -1,21 +1,116 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JavaScriptのサンプル</title>
-  <script src="script.js" defer></script>
-  </head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<title>推し自販機</title>
+
+</head>
+
 <body>
 
-  <img src="https://www.mozilla.org/media/protocol/img/logos/firefox/browser/logo.eb1324e44442.svg">
+<div id="area">
+<top_area>
+    <a id="top">
+    <img class="page" src="images/top.png">
 
-  <h1>🥠 おみくじ 🥠</h1>
-<div class="container">
-  <button id="fortune">おみくじをひく</button>
-  <div id="result">ここに結果が<br>表示されます</div>
+    <!-- imgのところにランダムボタンを配置 -->
+    <p><a href="javascript:random_jump();"><img class="top-lever-1-icon" src="images/top_lever.png"></a></p>
+    
+
+    <a href="https://maps.app.goo.gl/G5NeGojRdkS511rQ7"><img class="top-screen" src="images/top_screen.png"></a>
+
+    <a href="#" id="suzuki_button"><img class="button-suzuki-1-icon" src="images/button_suzuki.png"></a>
+    <a href="#" id="mitsui_button"><img class="button-mitsui-1-icon" src="images/button_mitsui.png"></a>
+    <a href="#" id="sano_button"><img class="button-sano-1-icon" src="images/button_sano.png"></a>
+    <a href="#" id="yamasaki_button"><img class="button-yamasaki-1-icon" src="images/button_yamasaki.png"></a>
+
+
+    
+</top_area>
+
+
+<a id="describe">
+    <describe_area>
+            <img class="page" src="images/aboutsite.png">
+    </describe_area>
+</a>
+<a id="suzuki">
+<suzuki_area>
+
+
+    <div class="yokoidou">
+        <!-- 最初に表示される画像の指定 -->
+        <img id="mypic_suzuki" class="page" src="images/suzuki_1.png">
+        <!-- 戻る進むボタンの設定 -->
+        <div class="suzuki_areabutton">
+        <input type="image" class="button_left" src="images/button_left.png" onclick="go_back_1()">
+        <input type="image" class="button_right" src="images/button_right.png" onclick="go_forward_1()">
+        </div>
+    </div>
+
+    <!-- <img class="page" src="images/suzuki_1.png">
+    <div class="suzuki_areabutton">
+        <img class="button_left" src="images/button_left.png">
+    <img class="button_right" src="images/button_right.png"> -->
+    <!-- </div> -->
+
+</suzuki_area>
+</a>
+
+<a id="mitsui">
+<mitsui_area>
+
+    <div class="yokoidou">
+        <!-- 最初に表示される画像の指定 -->
+        <img id="mypic_mitsui" class="page" src="images/mitsui_1.png">
+        <!-- 戻る進むボタンの設定 -->
+        <div class="mitsui_areabutton">
+        <input type="image" class="button_left" src="images/button_left.png" onclick="go_back_2()">
+        <input type="image" class="button_right" src="images/button_right.png" onclick="go_forward_2()">
+        </div>
+    </div>
+
+</mitsui_area>
+</a>
+<a id="sano">
+<sano_area>
+
+    <div class="yokoidou">
+        <!-- 最初に表示される画像の指定 -->
+        <img id="mypic_sano" class="page" src="images/sano_1.png">
+        <!-- 戻る進むボタンの設定 -->
+        <div class="sano_areabutton">
+        <input type="image" class="button_left" src="images/button_left.png" onclick="go_back_3()">
+        <input type="image" class="button_right" src="images/button_right.png" onclick="go_forward_3()">
+        </div>
+    </div>
+
+</sano_area>
+</a>
+<a id="yamasaki">
+<yamasaki_area>
+
+    <div class="yokoidou">
+        <!-- 最初に表示される画像の指定 -->
+        <img id="mypic_yamasaki" class="page" src="images/yamasaki_1.png">
+        <!-- 戻る進むボタンの設定 -->
+        <div class="yamasaki_areabutton">
+        <input type="image" class="button_left" src="images/button_left.png" onclick="go_back_4()">
+        <input type="image" class="button_right" src="images/button_right.png" onclick="go_forward_4()">
+        </div>
+    </div>
+
+</yamasaki_area>
+</a>
+
 </div>
 
+<p id="page-top"><a href="#"><img class="back" src="images/backtotop.png"></a></p>
+
+<script src="script.js"></script>
 </body>
 </html>
