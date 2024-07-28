@@ -1,0 +1,205 @@
+html {
+    scroll-behavior: smooth;
+    background: #EDBC3E;
+}
+
+/* エリア分け */
+#area{
+    display: grid;
+    position: absolute;
+    left: 0;
+    right: 0;
+    grid-template-areas:
+    "top_area"
+    "describe_area"
+    "suzuki_area"
+    "mitsui_area"
+    "sano_area"
+    "yamasaki_area";
+    grid-template-rows: 78vw 70vw 70vw 70vw 70vw 70vw;
+}
+
+/* 画像表示サイズ小さくしようかと思ったけど挫折 */
+/* #area>top_area{
+    grid-area: top_area;
+    background: red;
+}
+
+#area>suzuki_area{
+    grid-area: suzuki_area;
+    background: green;
+}
+#area>mitsui_area{
+    grid-area: mitsui_area;
+    background: rgb(5, 38, 255);
+}
+#area>sano_area{
+    grid-area: sano_area;
+    background: rgb(253, 7, 191);
+}
+#area>yamasaki_area{
+    grid-area: yamasaki_area;
+    background: rgb(128, 0, 45);
+} */
+
+
+/* スクリーン */
+.top-screen {
+    position: absolute;
+    top: 53vw;
+    left: 13.5vw;
+    width: 31.3vw;
+    object-fit: cover;
+    }
+    .top-screen:hover {
+        transform: scale(1.05);
+      }
+      
+/* レバー */
+    .top-lever-1-icon {
+    position: absolute;
+    top: 51.6vw;
+    left: 56.5vw;
+    width: 30.6vw;
+    object-fit: cover;
+    }
+        .top-lever-1-icon:hover {
+        transform: scale(1.05);
+      }
+
+/* 一番上の名前ボタン */
+
+    .button-suzuki-1-icon {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 43.5vw;
+    left: 18.1vw;
+    width: 13vw;
+    object-fit: cover;
+    }
+    .button-suzuki-1-icon:hover {
+        transform: scale(1.1);
+      }
+
+    .button-mitsui-1-icon {
+    position: absolute;
+    top: 43.5vw;
+    left: 35vw;
+    width: 13vw;
+    object-fit: cover;
+    }
+    .button-mitsui-1-icon:hover {
+        transform: scale(1.1);
+      }
+
+    .button-sano-1-icon {
+    position: absolute;
+    top: 43.5vw;
+    left: 51.9vw;
+    width: 13vw;
+    object-fit: cover;
+    }
+    .button-sano-1-icon:hover {
+        transform: scale(1.1);
+      }
+
+    .button-yamasaki-1-icon {
+    position: absolute;
+    top: 43.5vw;
+    left: 68.8vw;
+    width: 13vw;
+    object-fit: cover;
+    }
+    .button-yamasaki-1-icon:hover {
+        transform: scale(1.1);
+      }
+/* それぞれの画像を100%のサイズにするやつ */
+    .page {
+        width: 100%;
+        /* align-items: center;
+        text-align: center;
+        margin: auto; */
+    }
+
+/*  横の位置揃え*/
+
+    .button_left{
+        position: absolute;
+        left: 2vw;
+        width: 4vw;
+        /* width: 11.7vw; */
+    }
+
+    .button_left:hover {
+  transform: scale(1.1);
+}
+
+    .button_right{
+        position:absolute;
+        left: 94vw;
+        /* left: 86.6vw; */
+        width: 4vw;
+        /* width: 11.7vw; */
+    }
+    
+    .button_right:hover {
+        transform: scale(1.1);
+      }
+
+/*  areabutton＝左右ボタンの縦の位置揃え*/
+
+    .suzuki_areabutton{
+        position: absolute;
+        top: 177.15vw;
+    }
+    .mitsui_areabutton{
+        position: absolute;
+        top: 247.15vw;
+    }
+    .sano_areabutton{
+        position: absolute;
+        top: 317.15vw;
+    }
+    .yamasaki_areabutton{
+        position: absolute;
+        top: 387.15vw;
+    }
+    
+
+/* トップに戻る */
+.back{
+    width: 9.8vw;
+}
+    #page-top {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        font-size: 14px;
+        line-height: 1;
+        z-index: 99;
+      }
+      #page-top a {
+        width: 9.8vw;
+        transition: all .3s ease;
+      }
+      #page-top a:hover {
+        text-decoration: none;
+        opacity: .5;
+      }
+
+header{
+    background: #000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 7vw;
+    height: 7vw;
+}
+
+.audio_button{
+    width: 10%;
+    height: 10%;
+    background: white;
+}
+
